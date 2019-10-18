@@ -173,9 +173,159 @@ filter:url(commonfilters.xml#pictureFilter);
 
 # Les Blend mods
 
+Les "Blend mods" sont des mots-clés décrivant les différentes façons dont un un élément fusionne avec un autre.
+
+```css
+background-blend-mode: normal;
+mix-blend-mode: normal;
+```
+
+Ces deux propriétés sont celles utilisant les blends mods, la première, "background-blend-mode", comme son nom l'indique
+définit la manière donc les images ou les couleurs d'arrière-plan fusionnent entre elles.
+
+Elles s'utilisent donc comme toutes autres propriétés, dans un css simple, dans des classes, des IDs ...
+  
+ "mix-blend-mode" quant à elle, défnit la manière dont une image fusionne avec son élément parent et son arrière-plan.
+ 
+   
+   ##Différentes valeurs
+   
+     
+   Voici les différentes valeurs que peuvent prendre ces propriétés.
+   ###Normal
+   Aucun changement visible, la couleur obtenue est la couleur du premier-plan, peu importe ce qu'il y a derrière, ce qui, ne change rien.
+   
+   ```css
+mix-blend-mode:normal;
+```
+   
+   ###Multiply
+   
+   Cette propriété permet de multiplier les deux couleurs ou images, celle de l'arrière-plan, et celle du premier plan.
+   
+  Si l'un est noir, le résultat le sera, le blanc ne changeant pas l'autre image ou couleur.
+  
+  ```css
+mix-blend-mode:multiply;
+```
+
+###Screen
+
+Celui-ci est un peu plus complexe. 
+
+On prend les deux images, on en inverse les couleurs, on les multiplie ensuite ensemble et on réinverse.  
+Comme pour la multiplication, si une image est noire, le résultat est la seconde image, si l'une est blanche, le résultat est noir.
+
+```css
+mix-blend-mode:screen;
+```
+
+###Overlay
+
+Si l'arrière-plan est plus sombre que celui au premier plan, le résultat est celui de "multiply", si c'est l'inverse, le résultat est celui de "screen".
+
+```css
+mix-blend-mode:overlay;
+```
+
+###Darken
+
+Le résultat est le plus sombre des deux couches.
+
+```css
+mix-blend-mode:darken;
+```
+
+###Lighten
+
+Le résultat est l'opposé de "darken", c'est la couleur la plus claire des deux plans.
+
+```css
+mix-blend-mode:lighten;
+```
+   
+###Color-dodge
+
+Le résultat est la division de l'arrière-plan avec l'inverse de celui du premier.  
+Comme screen, un premier-plan noir n'entraîne aucun changement.
+
+```css
+mix-blend-mode:color-dodge;
+```   
+
+###Color-burn
+
+On inverse la couleur de l'arrière plan, qu'on divise ensuite par celle au premier, pour ensuite réinversé cela.
+
+```css
+mix-blend-mode:color-burn;
+```
+
+###Hard-light
+
+Si le premier plan est le plus sombre, le résultat est celui de multiply, sinon, celui de screen.
+
+```css
+mix-blend-mode:hard-light;
+```
+
+###Soft-light
+
+Résultat semblable à "hard-light" mais en plus "doux".
+
+```css
+mix-blend-mode:soft-light;
+```
+
+###Difference
+
+On soustrait la couleur la plus sombre à la plus claire, le noir n'a aucun effet et le blanc inverse les couleurs.
+
+```css
+mix-blend-mode:difference;
+```
+
+###Exclusion
+
+C'est une différence avec moins de contraste.
+
+```css
+mix-blend-mode:exclusion;
+```
+
+###Hue
+
+Le résultat aura la teinte du premier plan, mais la luminosité et la saturation de l'arrière-plan.
+
+```css
+mix-blend-mode:hue;
+```
+
+###Saturation
+
+Ici, le résultat possède la saturation de la couleur du premier plan, et la luminosité ainsi que la teinte de la couleur de l'arrière-plan.
+
+```css
+mix-blend:mode;
+```
+
+###Color
+
+La couleur obtenue en utilisant cette propriété possède la teinte et la saturation du premier-plan, et la luminosité de l'arrière-plan, ce qui est semblable à saturation.
+
+```css
+mix-blend-mode:color;
+```
+
+###Luminosity
+
+Tout comme "saturation" et "color", cette propriété permet à l'utilisateur d'obtenir une couleur qui possède la luminosité du premier plan, et la teinte ainsi que la saturation de l'arrière-plan.
+
+
 # Sources et autres tutoriels
 
 - https://developer.mozilla.org/fr/docs/Web/CSS/filter
+- https://developer.mozilla.org/fr/docs/Web/CSS/blend-mode
   
 ## Welcome to GitHub Pages
 ```
