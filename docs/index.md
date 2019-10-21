@@ -188,7 +188,7 @@ Elles s'utilisent donc comme toutes autres propriétés, dans un css simple, dan
 "mix-blend-mode" quant à elle, défnit la manière dont une image fusionne avec son élément parent et son arrière-plan.
  
    
-### Différentes valeurs
+## Différentes valeurs
      
 Voici les différentes valeurs que peuvent prendre ces propriétés.
 
