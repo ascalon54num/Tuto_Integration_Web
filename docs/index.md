@@ -324,8 +324,8 @@ Tout comme "saturation" et "color", cette propriété permet à l'utilisateur d'
 
 # Sources et autres tutoriels
 
-- https://developer.mozilla.org/fr/docs/Web/CSS/filter
-- https://developer.mozilla.org/fr/docs/Web/CSS/blend-mode
+-[Developer mozilla:filter effects](https://developer.mozilla.org/fr/docs/Web/CSS/filter)
+-[Developer mozilla:blend-mode](https://developer.mozilla.org/fr/docs/Web/CSS/blend-mode)
   
 ## Welcome to GitHub Pages
 ```
